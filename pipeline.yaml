@@ -1,0 +1,24 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - develop
+
+pr: none
+
+steps:
+  - task: AzureCLI@2
+    displayName: 'Create function app'
+    inputs:
+      azureSubscription: ${{ parameters.azureSubscription }}
+      scriptType: pscore
+      scriptLocation: scriptPath
+      scriptPath: $(System.DefaultWorkingDirectory)/powershell/Create-FunctionApp.ps1
+      # arguments: >-
+      #   -resourceGroup '${{ parameters.resourceGroup }}'
+      #   -webAppIdt '${{ parameters.webAppIdt }}'
+      #   -webAppPrf '${{ parameters.webAppPrf }}'
+      #   -webAppRec '${{ parameters.webAppRec }}'
+      #   -webAppVls '${{ parameters.webAppVls }}'
+      #   -buildAgentIpAddress '$(buildAgent.IpAddress)'
+      #   -defaultWorkingDirectory '$(System.DefaultWorkingDirectory)'

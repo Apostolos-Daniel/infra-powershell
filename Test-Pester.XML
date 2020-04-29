@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2020-04-29" time="22:25:40">
+  <environment clr-version="4.0.30319.42000" user-domain="BCA" cwd="C:\repos\external\behind-the-buzzword" platform="Microsoft Windows 10 Pro|C:\windows|\Device\Harddisk0\Partition3" machine-name="LP030762" nunit-version="2.5.8.0" os-version="10.0.18362" user="ApostolidisT" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="8.0172" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name=".\powershell\Create-FunctionApp.test.ps1" executed="True" result="Success" success="True" time="8.0172" asserts="0" description=".\powershell\Create-FunctionApp.test.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Function App Deployment Tests" executed="True" result="Success" success="True" time="7.9553" asserts="0" description="Function App Deployment Tests">
+            <results>
+              <test-suite type="TestFixture" name="When Function App created" executed="True" result="Success" success="True" time="7.8017" asserts="0" description="When Function App created">
+                <results>
+                  <test-case description="Should be running successfully" name="Function App Deployment Tests.When Function App created.Should be running successfully" time="0.0106" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Should have name of" name="Function App Deployment Tests.When Function App created.Should have name of" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
