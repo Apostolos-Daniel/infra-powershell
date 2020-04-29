@@ -10,7 +10,7 @@ steps:
   - task: AzureCLI@2
     displayName: 'Create function app'
     inputs:
-      azureSubscription: "c0cb9194-b9ed-47e5-8575-df981630b789"
+      azureSubscription: "33a292c8-ddfa-4d96-af29-2329272c7338"
       scriptType: pscore
       scriptLocation: scriptPath
       scriptPath: $(System.DefaultWorkingDirectory)/powershell/Create-FunctionApp.ps1
